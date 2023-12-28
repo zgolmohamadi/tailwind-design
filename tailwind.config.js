@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     container: {
       center: true,
-     
     },
+
     extend: {
       width: {
         140: "38.75rem",
@@ -18,6 +18,7 @@ module.exports = {
       height: {
         36: "2.25rem",
         46: "2.87rem",
+        100: "6.3rem",
       },
     },
 
