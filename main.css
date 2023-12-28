@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* typography */
+  --font-medium: 500;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+body {
+  @apply font-medium;
+  direction: rtl;
+}
+
+.container{
+  width: 99.83rem;
+}
+
+@layer components {
+  /*buttons*/
+  .btn-primary {
+    background-color: theme("colors.primary.zinc");
+    color: theme("colors.primary.white");
+    border: 0.188rem solid theme("colors.primary.zinc");
+  }
+  .btn-secondary {
+    background-color: theme("colors.secondary.gray-3");
+    color: theme("colors.primary.white");
+    border: 0.188rem solid theme("colors.secondary.gray-3");
+  }
+  .btn-tertiary {
+    background-color: transparent;
+    border: 0.188rem solid theme("colors.primary.zinc");
+    color: theme("colors.primary.zinc");
+  }
+  .btn-red {
+    background-color: transparent;
+    border: 0.188rem solid theme("colors.primary.red");
+    color: theme("colors.primary.white");
+  }
+}
+
