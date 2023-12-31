@@ -1,0 +1,44 @@
+[class^='icon-'] {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.42rem;
+  width: 1.42rem;
+}
+.icon-shop {
+  background-image: url('../assets/icons/shop.svg');
+}
+.icon-user {
+  background-image: url('../assets/icons/user.svg');
+}
+.icon-basket {
+  background-image: url('../assets/icons/basket.svg');
+}
+.icon-heart {
+  background-image: url('../assets/icons/heart.svg');
+}
+.icon-support {
+  background-image: url('../assets/icons/support.svg');
+}
+.icon-location {
+  background-image: url('../assets/icons/location.svg');
+}
+.icon-return-colored {
+  background-image: url('../assets/icons/return-64.svg');
+}
+.icon-pocket-colored {
+  background-image: url('../assets/icons/pocket.svg');
+}
+.icon-garantee-colored {
+  background-image: url('../assets/icons/garantee-62.svg');
+}
+
+.icon-support-colored{
+  background-image: url('../assets/icons/support-62.svg');
+}
+.icon-carry-colored{
+  background-image: url('../assets/icons/carry-62.svg');
+}
+.social-media{
+
+}

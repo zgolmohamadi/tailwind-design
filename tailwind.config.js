@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require('tailwindcss/plugin')
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js,css}"],
   theme: {
     container: {
       center: true,
@@ -19,6 +20,24 @@ module.exports = {
         36: "2.25rem",
         46: "2.87rem",
         100: "6.3rem",
+      },
+
+      screens:{
+        'xl': '99.83rem'
+      },
+      borderRadius: {
+        ...defaultTheme.borderRadius,
+        DEFAULT: "0.313rem",
+        1.6: "1.65625rem",
+        8: "0.5rem;",
+        4: "0.25rem",
+        2: "0.125rem",
+      },
+      boxShadow: {
+        ...defaultTheme.boxShadow,
+        "custom-1": "0px 0px 7px 0px rgba(49, 49, 49, 0.40)",
+        "custom-2": "0px 0px 10px 0px rgba(49, 49, 49, 0.24)",
+        "custom-3": "0px 0px 5px 0px rgba(49, 49, 49, 0.1)",
       },
     },
 
@@ -42,21 +61,20 @@ module.exports = {
         "light-gray-6": "#FCFCFC",
         "moderate-orange": "#D2AB66",
       },
-      borderRadius: {
-        ...defaultTheme.borderRadius,
-        DEFAULT: "0.313rem",
-        1.6: "1.65625rem",
-        8: "0.5rem;",
-        4: "0.25rem",
-        2: "0.125rem",
-      },
-      boxShadow: {
-        ...defaultTheme.boxShadow,
-        "custom-1": "0px 0px 7px 0px rgba(49, 49, 49, 0.40)",
-        "custom-2": "0px 0px 10px 0px rgba(49, 49, 49, 0.24)",
-        "custom-3": "0px 0px 5px 0px rgba(49, 49, 49, 0.10)",
-      },
+
     },
+    plugins: [
+      plugin(function ({ addBase, addComponents, addUtilities, theme }) {
+        addBase({
+          'h1': {
+            fontSize: theme('fontSize.2xl'),
+          },
+          'h2': {
+            fontSize: theme('fontSize.xl'),
+          },
+        })
+      })
+    ]
   },
 
   plugins: [],

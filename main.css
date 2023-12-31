@@ -1,6 +1,90 @@
+@import './publicStyles/icon.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_UltraLight.eot');
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_UltraLight.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_UltraLight.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/IRANSansWeb_FaNum_UltraLight.woff')
+      format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_UltraLight.ttf')
+      format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Light.eot');
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Light.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Light.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/IRANSansWeb_FaNum_Light.woff')
+      format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Light.ttf')
+      format('truetype');
+  font-weight: 200;
+}
+
+/* Fira Sans Light */
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/FiraSans-Light.eot');
+  src: url('/assets/font/iranSans/faNum/eot/FiraSans-Light.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/FiraSans-Light.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/FiraSans-Light.woff') format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/FiraSans-Light.ttf')
+      format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum.eot');
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/IRANSansWeb_FaNum.woff')
+      format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum.ttf')
+      format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Medium.eot');
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Medium.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Medium.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/IRANSansWeb_FaNum_Medium.woff')
+      format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Medium.ttf')
+      format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Bold.eot');
+  src: url('/assets/font/iranSans/faNum/eot/IRANSansWeb_FaNum_Bold.eot')
+      format('embedded-opentype'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Bold.woff2')
+      format('woff2'),
+    url('/assets/font/iranSans/faNum/woff/IRANSansWeb_FaNum_Bold.woff')
+      format('woff'),
+    url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Bold.ttf')
+      format('truetype');
+  font-weight: bold;
+}
 
 :root {
   /* typography */
@@ -9,36 +93,52 @@
   --font-bold: 700;
 }
 
-body {
+body,
+* {
   @apply font-medium;
+  font-family: 'IranSans';
   direction: rtl;
+  font-weight: normal;
+}
+.ltr {
+  direction: ltr;
 }
 
-.container{
-  width: 99.83rem;
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media screen(xl) {
+    width: 99.83rem;
+    padding-left: 0 ;
+    padding-right: 0;
+  }
 }
 
 @layer components {
   /*buttons*/
   .btn-primary {
-    background-color: theme("colors.primary.zinc");
-    color: theme("colors.primary.white");
-    border: 0.188rem solid theme("colors.primary.zinc");
+    background-color: theme('colors.primary.zinc');
+    color: theme('colors.primary.white');
+    border: 0.188rem solid theme('colors.primary.zinc');
   }
   .btn-secondary {
-    background-color: theme("colors.secondary.gray-3");
-    color: theme("colors.primary.white");
-    border: 0.188rem solid theme("colors.secondary.gray-3");
+    background-color: theme('colors.secondary.gray-3');
+    color: theme('colors.primary.white');
+    border: 0.188rem solid theme('colors.secondary.gray-3');
   }
   .btn-tertiary {
     background-color: transparent;
-    border: 0.188rem solid theme("colors.primary.zinc");
-    color: theme("colors.primary.zinc");
+    border: 0.188rem solid theme('colors.primary.zinc');
+    color: theme('colors.primary.zinc');
   }
   .btn-red {
     background-color: transparent;
-    border: 0.188rem solid theme("colors.primary.red");
-    color: theme("colors.primary.white");
+    border: 0.188rem solid theme('colors.primary.red');
+    color: theme('colors.primary.white');
+  }
+  .btn {
+    height: 2.875rem;
+    border-radius: 1.65625rem;
   }
 }
-
