@@ -29,21 +29,7 @@
       format('woff'),
     url('/assets/font/iranSans/faNum/woff2/IRANSansWeb_FaNum_Light.ttf')
       format('truetype');
-  font-weight: 200;
-}
-
-/* Fira Sans Light */
-@font-face {
-  font-family: 'IranSans';
-  src: url('/assets/font/iranSans/faNum/eot/FiraSans-Light.eot');
-  src: url('/assets/font/iranSans/faNum/eot/FiraSans-Light.eot')
-      format('embedded-opentype'),
-    url('/assets/font/iranSans/faNum/woff2/FiraSans-Light.woff2')
-      format('woff2'),
-    url('/assets/font/iranSans/faNum/woff/FiraSans-Light.woff') format('woff'),
-    url('/assets/font/iranSans/faNum/woff2/FiraSans-Light.ttf')
-      format('truetype');
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @font-face {
@@ -93,12 +79,17 @@
   --font-bold: 700;
 }
 
-body,
+body {
+  color: #313131;
+}
 * {
   @apply font-medium;
   font-family: 'IranSans';
   direction: rtl;
   font-weight: normal;
+}
+*:focus {
+  outline: none;
 }
 .ltr {
   direction: ltr;
@@ -110,7 +101,7 @@ body,
   padding-right: 1rem;
   @media screen(xl) {
     width: 99.83rem;
-    padding-left: 0 ;
+    padding-left: 0;
     padding-right: 0;
   }
 }
@@ -140,5 +131,13 @@ body,
   .btn {
     height: 2.875rem;
     border-radius: 1.65625rem;
+  }
+
+  .inputField {
+    border: 1.1px solid theme('colors.secondary.light-gray-3');
+    border-radius: 1.65625rem;
+    width: 19.25rem;
+    height: 2.875rem;
+    max-width: 100%;
   }
 }

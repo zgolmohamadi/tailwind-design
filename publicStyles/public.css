@@ -1,0 +1,49 @@
+
+.social-media li > a {
+    background-image: url('../assets/icons/social-media.svg');
+    width: 2rem;
+    height: 1.87rem;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .social-media > li:nth-child(1) > a {
+    background-position: -97px -1px;
+  }
+  .social-media > li:nth-child(2) > a {
+    background-position: -47px -1px;
+  }
+  .social-media > li:nth-child(3) > a {
+    background-position: 2px -1px;
+  }
+  
+  
+  .certificates > span {
+    width: 5.6125rem;
+    height: 7.3105rem;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(49, 49, 49, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .certificates > span:nth-child(1) {
+    background-image: url('../assets/icons/certificate-1.jpg');
+  }
+  .certificates > span:nth-child(2) {
+    background-image: url('../assets/icons/certificate-2.jpg');
+  }
+  .certificates > span:nth-child(3) {
+    background-image: url('../assets/icons/Iso-9001.jpg');
+  }
+  .certificates > span:nth-child(4) {
+    background-image: url('../assets/icons/Iso-45001.jpg');
+  }
+  .certificates > span:nth-child(5) {
+    background-image: url('../assets/icons/samandehi.jpg');
+  }
+  
+  .accordion.active ul{
+    display: block;
+  }
+  

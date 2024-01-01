@@ -39,6 +39,9 @@
 .icon-carry-colored{
   background-image: url('../assets/icons/carry-62.svg');
 }
-.social-media{
-
+.icon-password-hidden{
+  background-image: url('../assets/icons/password-hidden.svg');
+}
+.icon-password-visible{
+  background-image: url('../assets/icons/password-visible.svg');
 }
