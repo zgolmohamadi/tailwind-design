@@ -5,6 +5,10 @@
   height: 1.42rem;
   width: 1.42rem;
 }
+.icon--white{
+  filter: brightness(0) invert(1);
+
+}
 .icon-shop {
   background-image: url('../assets/icons/shop.svg');
 }
@@ -16,6 +20,9 @@
 }
 .icon-heart {
   background-image: url('../assets/icons/heart.svg');
+}
+.icon-heart-borderd{
+  background-image: url('../assets/icons/heart-borderd.svg');
 }
 .icon-support {
   background-image: url('../assets/icons/support.svg');
@@ -44,4 +51,49 @@
 }
 .icon-password-visible{
   background-image: url('../assets/icons/password-visible.svg');
+}
+.icon-compare{
+  background-image: url('../assets/icons/compare.svg');
+}
+.icon-chart{
+  background-image: url('../assets/icons/chart.svg');
+}
+.icon-share{
+  background-image: url('../assets/icons/share.svg');
+}
+
+.icon-star-filled{
+  background-image: url('../assets/icons/star-filled.svg');
+}
+.icon-star{
+  background-image: url('../assets/icons/star.svg');
+}
+.icon-rating-up{
+  background-image: url('../assets/icons/rating-up.svg');
+}
+.icon-rating-down{
+  background-image: url('../assets/icons/rating-down.svg');
+}
+.icon-left{
+  background-image: url('../assets/icons/arrow-left.svg');
+}
+.icon-basket-white{
+  background-image: url('../assets/icons/basket-white.svg');
+}
+.icon-location18{
+  background-image: url('../assets/icons/location-18.svg');
+}
+.icon-pay{
+  background-image: url('../assets/icons/pay.svg');
+}
+.icon-order-finished{
+  background-image: url('../assets/icons/order-finished.svg');
+}
+.icon-remove{
+  background-image: url('../assets/icons/remove.svg');
+}
+
+.icon-ok{
+  background-image: url('../assets/icons/ok.svg');
+
 }

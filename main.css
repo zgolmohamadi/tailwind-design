@@ -72,6 +72,27 @@
   font-weight: bold;
 }
 
+@layer base {
+  h1 {
+    @apply text-[1.42rem];
+  }
+  h2 {
+    @apply text-[1.26rem];
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-[0.88rem];
+  }
+  h6 {
+    @apply text-[0.79rem];
+  }
+}
+
 :root {
   /* typography */
   --font-medium: 500;
@@ -81,12 +102,15 @@
 
 body {
   color: #313131;
+
+  font-weight: normal;
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
-  @apply font-medium;
   font-family: 'IranSans';
   direction: rtl;
-  font-weight: normal;
 }
 *:focus {
   outline: none;
@@ -113,6 +137,11 @@ body {
     color: theme('colors.primary.white');
     border: 0.188rem solid theme('colors.primary.zinc');
   }
+  .btn-primary:disabled,   .btn-primary[disabled] {
+    background-color: theme('colors.secondary.gray-3');
+    color: theme('colors.primary.white');
+    border: 0.188rem solid theme('colors.secondary.gray-3');
+  }
   .btn-secondary {
     background-color: theme('colors.secondary.gray-3');
     color: theme('colors.primary.white');
@@ -120,7 +149,7 @@ body {
   }
   .btn-tertiary {
     background-color: transparent;
-    border: 0.188rem solid theme('colors.primary.zinc');
+    border: 0.188rem solid theme('colors.secondary.light-gray-2');
     color: theme('colors.primary.zinc');
   }
   .btn-red {
@@ -131,6 +160,7 @@ body {
   .btn {
     height: 2.875rem;
     border-radius: 1.65625rem;
+    min-width :8.75rem;
   }
 
   .inputField {
@@ -139,5 +169,6 @@ body {
     width: 19.25rem;
     height: 2.875rem;
     max-width: 100%;
+    padding: 0 1rem;
   }
 }

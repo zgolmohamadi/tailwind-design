@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
-const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: ["./**/*.{html,js,css}"],
+  content: ['./**/*.{html,js,css}'],
   theme: {
     container: {
       center: true,
@@ -10,71 +10,52 @@ module.exports = {
 
     extend: {
       width: {
-        140: "38.75rem",
-        200: "12.5rem",
-        308: "19.25rem",
-        174: "10.87rem",
-        280: "17.5rem",
-      },
-      height: {
-        36: "2.25rem",
-        46: "2.87rem",
-        100: "6.3rem",
+        484: '30.25rem',
       },
 
-      screens:{
-        'xl': '99.83rem'
+      screens: {
+        xl: '99.83rem',
       },
       borderRadius: {
         ...defaultTheme.borderRadius,
-        DEFAULT: "0.313rem",
-        1.6: "1.65625rem",
-        8: "0.5rem;",
-        4: "0.25rem",
-        2: "0.125rem",
+        DEFAULT: '0.313rem',
+        1.6: '1.65625rem',
+        8: '0.5rem;',
+        4: '0.25rem',
+        2: '0.125rem',
       },
       boxShadow: {
         ...defaultTheme.boxShadow,
-        "custom-1": "0px 0px 7px 0px rgba(49, 49, 49, 0.40)",
-        "custom-2": "0px 0px 10px 0px rgba(49, 49, 49, 0.24)",
-        "custom-3": "0px 0px 5px 0px rgba(49, 49, 49, 0.1)",
+        'custom-1': '0px 0px 7px 0px rgba(49, 49, 49, 0.40)',
+        'custom-11': '0px 0px 7px 0px rgba(49, 49, 49, 0.18)',
+        'custom-2': '0px 0px 10px 0px rgba(49, 49, 49, 0.24)',
+        'custom-22': '0px 0px 7px rgba(49, 49, 49, 0.18)',
+        'custom-3': '0px 0px 5px 0px rgba(49, 49, 49, 0.1)',
       },
     },
 
     colors: {
-      transparent: "transparent",
+      ...defaultTheme.colors,
+      transparent: 'transparent',
       primary: {
-        white: "#FFF",
-        zinc: "#313131",
-        red: "#DE192B",
+        white: '#FFF',
+        zinc: '#313131',
+        red: '#DE192B',
       },
       secondary: {
-        black: "#000",
-        "gray-1": "#414141",
-        "gray-2": "#6c6c6c",
-        "gray-3": "#919191",
-        "light-gray-1": "#C2C2C2",
-        "light-gray-2": "#E4E4E4",
-        "light-gray-3": "#EEEEEE",
-        "light-gray-4": "#F5F5F7",
-        "light-gray-5": "#F9F9F9",
-        "light-gray-6": "#FCFCFC",
-        "moderate-orange": "#D2AB66",
+        black: '#000',
+        'gray-1': '#414141',
+        'gray-2': '#6c6c6c',
+        'gray-3': '#919191',
+        'light-gray-1': '#C2C2C2',
+        'light-gray-2': '#E4E4E4',
+        'light-gray-3': '#EEEEEE',
+        'light-gray-4': '#F5F5F7',
+        'light-gray-5': '#F9F9F9',
+        'light-gray-6': '#FCFCFC',
+        'moderate-orange': '#D2AB66',
       },
-
     },
-    plugins: [
-      plugin(function ({ addBase, addComponents, addUtilities, theme }) {
-        addBase({
-          'h1': {
-            fontSize: theme('fontSize.2xl'),
-          },
-          'h2': {
-            fontSize: theme('fontSize.xl'),
-          },
-        })
-      })
-    ]
   },
 
   plugins: [],
