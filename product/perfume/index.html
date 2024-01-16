@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link href="../../publicStyles/public.css" rel="stylesheet" />
-    <script src="../scripts.js"></script>
+
+    <link
+      href="../../publicStyles/public.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="/lib/slickSlider/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/lib/slickSlider/slick-theme.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
   </head>
   <body>
     <header class="py-4">
@@ -127,11 +140,42 @@
             <div></div>
           </div>
           <div
-            class="w-[30.25rem] mr-[3.13rem] border border-secondary-light-gray-6 bg-secondary-light-gray-2 ml-7"
+            class="xl:size-[30.25rem] w-[25rem] xl:mr-[3.13rem] md:ml-4 xl:ml-20  mr-6 flex-1"
           >
-            Slider
+            <div dir="rtl">
+              <div
+                class="slider slider-for shadow-custom-3 rounded-4 thumbnail_slider xl:size-[30.25rem] w-full"
+              >
+                <div>
+                  <img src="/assets/img/slider-img.jpg" alt="" width="259" />
+                </div>
+                <div>
+                  <img src="/assets/img/image-1.jpg" alt="" width="259" />
+                </div>
+                <div>
+                  <img src="/assets/img/image-2.jpg" alt="" width="259" />
+                </div>
+              </div>
+              <div class="slider slider-nav mt-[1.12rem] w-[30.25rem]">
+                <div>
+                  <div class="item">
+                    <img src="/assets/img/sample-5.jpg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <div class="item">
+                    <img src="/assets/img/image-1.jpg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <div class="item">
+                    <img src="/assets/img/image-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col mt-6 lg:mt-0 flex-1">
+          <div class="flex flex-col mt-6 lg:mt-0 flex-auto">
             <div class="flex justify-between flex-wrap gap-3">
               <div>
                 <span class="text-[0.88rem] font-light flex flex-col"
@@ -159,14 +203,14 @@
                 <i class="icon-star-filled size-4"></i>
                 <i class="icon-star-filled size-4"></i>
                 <i class="icon-star-filled size-4"></i>
-                <i class="icon-star-filled size-4"></i>
+                <i class="icon-star size-4"></i>
               </span>
               <span class="mr-2 text-[0.62rem] text-secondary-gray-3 font-light"
-                >(5 از 5)</span
+                >(4 از 5)</span
               >
               <span
                 class="mr-[2.05rem] text-[0.62rem] text-secondary-gray-3 flex items-center font-light"
-                ><i class="icon-heart-borderd w-[0.9rem] h-[0.87rem] ml-2"></i>
+                ><i class="icon-heart-filled w-[0.9rem] h-[0.87rem] ml-2"></i>
                 56</span
               >
             </div>
@@ -178,7 +222,7 @@
                   class="font-light h-14 flex items-center justify-center text-secondary-gray-2 text-sm bg-secondary-light-gray-3 border-l border-secondary-light-gray-2"
                   >نوع</span
                 ><span
-                  class="flex justify-center items-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
+                  class="text-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2 "
                   >ادوپرفیوم</span
                 >
               </div>
@@ -187,7 +231,7 @@
                   class="font-light h-14 flex items-center justify-center text-secondary-gray-2 text-sm bg-secondary-light-gray-3 border-l border-secondary-light-gray-2"
                   >گروه بویایی</span
                 ><span
-                  class="flex justify-center items-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
+                  class="text-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
                   >رایحه های گلی</span
                 >
               </div>
@@ -196,7 +240,7 @@
                   class="font-light h-14 flex items-center justify-center text-secondary-gray-2 text-sm bg-secondary-light-gray-3 border-l border-secondary-light-gray-2"
                   >میزان حجم</span
                 ><span
-                  class="flex justify-center items-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
+                  class="text-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
                   >100 میل</span
                 >
               </div>
@@ -205,7 +249,7 @@
                   class="font-light h-14 flex items-center justify-center text-secondary-gray-2 text-sm bg-secondary-light-gray-3 border-l border-secondary-light-gray-2"
                   >کشور مبدا</span
                 ><span
-                  class="flex justify-center items-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
+                  class="text-center text-sm text-secondary-gray-1 py-4 font-light border-l border-secondary-light-gray-2"
                   >فرانسه</span
                 >
               </div>
@@ -214,7 +258,8 @@
                   class="font-light h-14 flex items-center justify-center text-secondary-gray-2 text-sm bg-secondary-light-gray-3"
                   >کد محصول</span
                 ><span
-                  class="flex justify-center items-center text-sm text-secondary-gray-1 py-4 font-light"
+                  class="block text-center px-2 justify-center items-center text-sm text-secondary-gray-1 py-4 font-light  text-ellipsis
+                  overflow-hidden w-full"
                   >3423470398021</span
                 >
               </div>
@@ -333,11 +378,11 @@
                 مناسب است. این...
               </p>
               <a
-              href="#"
-              class="text-primary-red text-[0.79rem] flex items-center mt-[0.79rem] font-light"
-            >
-              ادامه مطلب <i class="icon-left size-2 mr-1"></i
-            ></a>
+                href="#"
+                class="text-primary-red text-[0.79rem] flex items-center mt-[0.79rem] font-light"
+              >
+                ادامه مطلب <i class="icon-left size-2 mr-1"></i
+              ></a>
             </section>
             <hr
               class="border-t-secondary-light-gray-3 mt-[1.88rem] mb-[2.69rem]"
@@ -464,7 +509,7 @@
             <section id="comments">
               <h3 class="font-bold text-lg mb-[0.32rem]">نظرات</h3>
 
-              <div class="flex items-center">
+              <div class="flex items-end">
                 <san class="text-[0.88875rem] ml-[0.72rem] font-light"
                   >امتیاز شما به این کالا:
                 </san>
@@ -509,7 +554,7 @@
                   <span
                     class="text-[0.79rem] text-secondary-gray-3 font-light flex items-center"
                   >
-                    <input type="checkbox" class="ml-1" />
+                    <input type="checkbox" class="ml-1 checkbox--gray" />
                     <label>ذخیره نام و ایمیل برای ارسال نظرات بعدی </label>
                   </span>
                 </div>
@@ -671,6 +716,222 @@
             <button class="btn btn-primary w-full mt-0.5">
               افزودن به سبد خرید
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container pb-[3.5rem]">
+      <div class="mb-[1.18rem] mt-[2.77rem] flex justify-between">
+        <span class="text-[1.26rem]">کالاهای مرتبط</span>
+        <a href="#" class="text-[0.79rem] flex items-center text-primary-red">مشاهده همه <i class="icon-left h-[0.6rem] w-[0.7rem]"></i></a>
+      </div>
+      <div class="slider carousel" dir="rtl">
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample5.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample6.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample7.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample8.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample9.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample5.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9 "
+            >
+              <img
+                src="../../assets/img/img-sample7.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-baseline">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+          >
+            <div
+              class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+            >
+              <img
+                src="../../assets/img/img-sample6.jpg"
+                width="100"
+                class="object-contain h-full"
+              />
+              <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+            </div>
+            <div>پرفیوم زرجوف گلدن دالا</div>
+            <div>50 میل</div>
+            <div class="flex justify-between items-center">
+              <span class="text-center line-through text-secondary-gray-3"
+                >823.000</span
+              >
+              <span class="text-center text-base flex items-baseline"
+                >894.000 <i class="icon-toman"></i
+              ></span>
+            </div>
           </div>
         </div>
       </div>
@@ -886,7 +1147,16 @@
         Copyright © 2022 Hiland Beauty All rights reserved.
       </div>
     </footer>
-
-    <script src="../publicJs/scripts.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="/lib/slickSlider/slick.min.js"></script>
+    <script src="../../publicJs/scripts.js" type="text/javascript"></script>
+    <script src="../scripts.js" type="text/javascript"></script>
   </body>
 </html>

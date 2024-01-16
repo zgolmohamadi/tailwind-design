@@ -24,6 +24,9 @@
 .icon-heart-borderd{
   background-image: url('../assets/icons/heart-borderd.svg');
 }
+.icon-heart-filled{
+  background-image: url('../assets/icons/heat-filled.svg');
+}
 .icon-support {
   background-image: url('../assets/icons/support.svg');
 }
@@ -96,4 +99,8 @@
 .icon-ok{
   background-image: url('../assets/icons/ok.svg');
 
+}
+.icon-toman{
+  background-image: url('../assets/icons/toman.svg');
+  width: 0.8rem;
 }

@@ -103,7 +103,14 @@
     background-color: #313131;
   }
 }
-
+[type='checkbox'].checkbox--gray {
+  &::before {
+    border: 1px solid #919191;
+  }
+  &:checked::before {
+    background-color: #919191;
+  }
+}
 [type='checkbox'] + label {
   padding-right: 0.5rem;
   font-size: 1rem;
