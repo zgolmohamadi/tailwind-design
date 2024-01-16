@@ -115,3 +115,13 @@
   padding-right: 0.5rem;
   font-size: 1rem;
 }
+
+
+.slick-arrow {
+  width: 2rem;
+  height: 2rem;
+  z-index: 9;
+}
+[dir="rtl"] .slick-arrow::before{
+  content: initial;
+  }

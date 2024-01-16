@@ -31,11 +31,7 @@
   padding-top: 4px;
   padding-bottom: 4px;
 }
- .slick-arrow {
-  width: 2rem;
-  height: 2rem;
-  z-index: 9;
-}
+
 .thumbnail_slider .slick-prev {
   right: 1.13rem;
 }
@@ -49,9 +45,7 @@
 .slick-disabled{
     display: none !important;
 }
-[dir="rtl"] .slick-arrow::before{
-content: initial;
-}
+
 
 .carousel .slick-next{
     left: -21px;

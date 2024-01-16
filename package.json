@@ -14,7 +14,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
     "slick-slider": "^1.8.2"
   }
 }

@@ -74,7 +74,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     fade: true,
     asNavFor: '.slider-nav',
-    infinite:false,
+    infinite: false,
     rtl: true,
     prevArrow:
       "<img class='a-left control-c prev slick-prev' src='/assets/img/arrow-right.svg'>",
@@ -90,7 +90,7 @@ $(document).ready(function () {
     variableWidth: false,
     arrows: false,
     centerMode: false,
-    infinite:false,
+    infinite: false,
   });
 
   //product carasual
@@ -98,40 +98,39 @@ $(document).ready(function () {
   $('.carousel').slick({
     slidesToShow: 7,
     slidesToScroll: 3,
-    infinite:false,
+    infinite: false,
     rtl: true,
-    arrows:true,
+    arrows: true,
     prevArrow:
       "<button class='a-left control-c prev slick-prev'><img  src='/assets/img/arrow-right.svg'></button>",
     nextArrow:
       "<button class='a-right control-c next slick-next'><img  src='/assets/img/arrow-left.svg'></button>",
-
-      responsive: [
-        {
-          breakpoint: 1280,
-          settings: {
-            rtl: true,
-            arrows: false,
-            slidesToShow: 4
-          }
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          rtl: true,
+          arrows: false,
+          slidesToShow: 4,
         },
-        {
-          breakpoint: 768,
-          settings: {
-            rtl: true,
-            arrows: false,
-            slidesToShow: 3
-          }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          rtl: true,
+          arrows: false,
+          slidesToShow: 3,
         },
-        {
-          breakpoint: 640,
-          settings: {
-            rtl: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll:1,
-          }
-        }
-      ]
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          rtl: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
