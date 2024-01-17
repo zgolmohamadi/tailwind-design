@@ -116,12 +116,11 @@
   font-size: 1rem;
 }
 
-
-.slick-arrow {
+[dir="rtl"] .slick-arrow {
   width: 2rem;
   height: 2rem;
   z-index: 9;
 }
-[dir="rtl"] .slick-arrow::before{
-  content: initial;
-  }
+[dir='rtl'] .slick-arrow::before {
+  content: initial !important;
+}

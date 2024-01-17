@@ -1,0 +1,26 @@
+.main-slider .slick-list{
+    padding-right: 0 !important;
+}
+
+.main-slider .slick-next{
+    right: auto;
+    left: 0.75rem;
+}
+.main-slider .slick-prev{
+    right: 0;
+    left: auto;
+}
+.main-slider .slick-arrow{
+width: 2rem;
+height: 2rem;
+}
+ .slick-disabled{
+    display: none !important;
+}
+
+.carousel .slick-next {
+    left: -12px;
+  }
+  .carousel .slick-prev {
+    right: -8px;
+  }

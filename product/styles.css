@@ -39,17 +39,16 @@
   left: 1.13rem;
 }
 
-.carousel .slick-list { 
-    margin: 0 -0.5rem;
+.carousel .slick-list {
+  margin: 0 -0.5rem;
 }
-.slick-disabled{
-    display: none !important;
+.slick-disabled {
+  display: none !important;
 }
 
-
-.carousel .slick-next{
-    left: -21px;
+.carousel .slick-next {
+  left: -21px;
 }
-.carousel .slick-prev{
-    right: -21px;
+.carousel .slick-prev {
+  right: -21px;
 }
