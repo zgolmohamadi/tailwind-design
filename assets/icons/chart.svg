@@ -1,0 +1,17 @@
+<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1773">
+<path id="Vector 1133" d="M1.09375 17.3066H17.8937" stroke="#313131" stroke-width="1.1" stroke-linecap="round"/>
+<path id="Rectangle 1215" d="M1.74922 13.1064C1.74922 12.8579 1.95069 12.6564 2.19922 12.6564H4.49922C4.74775 12.6564 4.94922 12.8579 4.94922 13.1064V17.2564H1.74922V13.1064Z" stroke="#313131" stroke-width="1.1"/>
+<path id="Rectangle 1216" d="M7.74531 10.6084C7.74531 10.3599 7.94678 10.1584 8.19531 10.1584H10.4953C10.7438 10.1584 10.9453 10.3599 10.9453 10.6084V17.2584H7.74531V10.6084Z" stroke="#313131" stroke-width="1.1"/>
+<g id="Rectangle 1217">
+<mask id="path-4-inside-1_105_3305" fill="white">
+<path d="M13.293 8.80664C13.293 8.25436 13.7407 7.80664 14.293 7.80664H16.593C17.1453 7.80664 17.593 8.25436 17.593 8.80664V17.8066H13.293V8.80664Z"/>
+</mask>
+<path d="M13.293 8.80664C13.293 8.25436 13.7407 7.80664 14.293 7.80664H16.593C17.1453 7.80664 17.593 8.25436 17.593 8.80664V17.8066H13.293V8.80664Z" stroke="#313131" stroke-width="2.2" mask="url(#path-4-inside-1_105_3305)"/>
+</g>
+<g id="Group 1772">
+<path id="Vector 1134" d="M1 8.80762C4 8.64095 11.8998 7.70654 17.4 1.80762" stroke="#313131" stroke-linecap="round"/>
+<path id="Vector 1135" d="M15.9993 1.48204L17.7286 1.26647L17.9497 3.04598" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
