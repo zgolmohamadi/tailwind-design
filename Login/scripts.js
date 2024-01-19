@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (mobileInput.value) {
       if (!validateIranianPhonenumber(mobileInput.value)) {
         mobileInput.classList.add('!border-primary-red');
-        validation_label.classList.remove('hidden');
+        validation_label.classList.remove('invisible');
       } else {
         mobileInput.classList.remove('!border-primary-red');
-        validation_label.classList.add('hidden');
+        validation_label.classList.add('invisible');
       }
     }
   }

@@ -10,9 +10,9 @@ $(document).ready(function () {
     centerPadding: '14.8125rem',
     arrows: true,
     prevArrow:
-      "<button class='a-left control-c prev slick-prev'><img  src='/assets/img/arrow-right.svg'></button>",
+      "<button class='a-left control-c prev slick-prev'><img  src='../assets/img/arrow-right.svg'></button>",
     nextArrow:
-      "<button class='a-right control-c next slick-next'><img  src='/assets/img/arrow-left.svg'></button>",
+      "<button class='a-right control-c next slick-next'><img  src='../assets/img/arrow-left.svg'></button>",
   });
 
     //product carasual
@@ -24,9 +24,9 @@ $(document).ready(function () {
       rtl: true,
       arrows: true,
       prevArrow:
-        "<button class='a-left control-c prev slick-prev'><img  src='/assets/img/arrow-right.svg'></button>",
+        "<button class='a-left control-c prev slick-prev'><img  src='../assets/img/arrow-right.svg'></button>",
       nextArrow:
-        "<button class='a-right control-c next slick-next'><img  src='/assets/img/arrow-left.svg'></button>",
+        "<button class='a-right control-c next slick-next'><img  src='../assets/img/arrow-left.svg'></button>",
       responsive: [
         {
           breakpoint: 1280,

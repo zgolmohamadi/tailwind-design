@@ -1,0 +1,19 @@
+
+.carousel .slick-list {
+    margin: 0 -0.5rem;
+  }
+  .slick-disabled {
+    display: none !important;
+  }
+  
+  .carousel .slick-next {
+    left: -21px;
+  }
+  .carousel .slick-prev {
+    right: -21px;
+  }
+  .slick-list,
+  .slick-track,
+  .slick-slide {
+    height: 100%;
+  }  

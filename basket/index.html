@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
     <link
-      href="../../publicStyles/public.css"
+      href="../publicStyles/public.css"
       rel="stylesheet"
       type="text/css"
     />
+
+    
+    <link rel="stylesheet" type="text/css" href="../lib/slickSlider/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../lib/slickSlider/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
 
   </head>
   <body>
@@ -17,7 +26,7 @@
         <a
           href="/"
           class="flex items-center lg:w-[10.62494rem] w-32 h-full ml-2 mb-3 lg:mb-0"
-          ><img src="/assets/icons/logo.svg" alt="logo"
+          ><img src="../assets/icons/logo.svg" alt="logo"
         /></a>
         <div class="relative flex items-center">
           <input
@@ -276,17 +285,17 @@
         <div class="mt-[1.06rem] font-light">
             <span class="text-[0.88rem]">نوع کاغذ کادو را انتخاب کنید :</span>
             <div class="flex gap-5 *:p-[0.7rem] *:size-[5.25rem] *:rounded-4 *:shadow-custom-3 mt-[0.9rem] flex-wrap">
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
-                <div><img src="/assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
+                <div><img src="../assets/img/gift-sample.jpg" alt="" class="size-[3.78244rem]"></div>
             </div>
         </div>
         </div>
@@ -319,9 +328,224 @@
         </div>
       </div>
     </section>
-    <section class="mt-20 container">
-        <h2>بازدیدهای اخیر</h2>
-    </section>
+ 
+        <section class="container pb-[3.5rem]">
+          <div class="mb-[1.18rem] mt-[2.77rem] flex justify-between">
+            <span class="text-[1.26rem]">بازدیدهای اخیر</span>
+            <a href="#" class="text-[0.79rem] flex items-center text-primary-red">مشاهده همه <i class="icon-left h-[0.6rem] w-[0.7rem]"></i></a>
+          </div>
+          <div class="slider carousel" dir="rtl">
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample5.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample6.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample7.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample8.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample9.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample5.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9 "
+                >
+                  <img
+                    src="../assets/img/img-sample7.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div
+                class="flex flex-col font-light text-center text-[0.79rem] shadow-custom-3 p-5 relative"
+              >
+                <div
+                  class="h-[9.91rem] flex justify-center items-center w-full mb-9"
+                >
+                  <img
+                    src="../assets/img/img-sample6.jpg"
+                    width="100"
+                    class="object-contain h-full"
+                  />
+                  <span class="bg-primary-red px-2 top-3 right-3 left-auto text-primary-white absolute  rounded-2 font-bold h-[1.125rem] leading-5 text-[0.79rem]">50%</span>
+                </div>
+                <div>پرفیوم زرجوف گلدن دالا</div>
+                <div>50 میل</div>
+                <div class="flex justify-between items-center">
+                  <span class="text-center line-through text-secondary-gray-3"
+                    >823.000</span
+                  >
+                  <span class="text-center text-base flex items-baseline"
+                    >894.000 <i class="icon-toman"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <footer class="border-t border-secondary-light-gray-2 mt-14">
       <div class="bg-secondary-light-gray-4">
         <div
@@ -360,7 +584,7 @@
         </div>
       </div>
       <a href="/" class="flex items-center justify-center py-6 w-full md:hidden"
-        ><img src="/assets/icons/logo.svg" alt="logo" width="150"
+        ><img src="../assets/icons/logo.svg" alt="logo" width="150"
       /></a>
       <div>
         <div
@@ -533,7 +757,18 @@
         Copyright © 2022 Hiland Beauty All rights reserved.
       </div>
     </footer>
-
-    <script src="../../publicJs/scripts.js" type="text/javascript"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../lib/slickSlider/slick.min.js"></script>
+    <script src="../publicJs/scripts.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

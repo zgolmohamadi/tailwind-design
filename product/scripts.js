@@ -77,9 +77,9 @@ $(document).ready(function () {
     infinite: false,
     rtl: true,
     prevArrow:
-      "<img class='a-left control-c prev slick-prev' src='/assets/img/arrow-right.svg'>",
+      "<img class='a-left control-c prev slick-prev' src='../../assets/img/arrow-right.svg'>",
     nextArrow:
-      "<img class='a-right control-c next slick-next' src='/assets/img/arrow-left.svg'>",
+      "<img class='a-right control-c next slick-next' src='../../assets/img/arrow-left.svg'>",
   });
   $('.slider-nav').slick({
     slidesToShow: 5,
@@ -102,9 +102,9 @@ $(document).ready(function () {
     rtl: true,
     arrows: true,
     prevArrow:
-      "<button class='a-left control-c prev slick-prev'><img  src='/assets/img/arrow-right.svg'></button>",
+      "<button class='a-left control-c prev slick-prev'><img  src='../../assets/img/arrow-right.svg'></button>",
     nextArrow:
-      "<button class='a-right control-c next slick-next'><img  src='/assets/img/arrow-left.svg'></button>",
+      "<button class='a-right control-c next slick-next'><img  src='../../assets/img/arrow-left.svg'></button>",
     responsive: [
       {
         breakpoint: 1280,
